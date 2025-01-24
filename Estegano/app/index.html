@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estegano</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="js" href="script.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🕵️‍♂️ Estegano</h1>
+      <p>Encode and decode hidden messages in photos with ease.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Step 1: Upload an Photo</h2>
+        <input type="file" id="imageInput" accept="image/*" class="file-input">
+        <canvas id="imageCanvas"></canvas>
+      </section>
+
+
+
+      <section class="card">
+        <h2>Step 2: Encode a Message</h2>
+        <textarea id="messageInput" placeholder="Type your secret message here..."></textarea>
+        <button id="encodeButton" class="button">Encode Message</button>
+        <a id="downloadLink" class="button download" style="display:none;" download="encoded-image.png">Download Encoded Image</a>
+      </section>
+
+      <section class="card">
+        <h2>Step 3: Decode an Photo</h2>
+        <button id="decodeButton" class="button">Decode an Photo</button>
+        <textarea id="decodedMessage" readonly placeholder="Decoded message will appear here..."></textarea>
+      </section>
+    </main>
+
+    <footer>
+      <p>By Estegano</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
